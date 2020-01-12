@@ -309,11 +309,7 @@ class RandomSearch:
 
 
 if __name__ == "__main__":
-    xx, yy = unpick("boston.pkl")  # set /AML as working dir
-    # small_ga_adj = GA_adjusted(xx, yy, pop_size=10, max_generations=5)
-    # bestie = small_ga_adj.run()
-    # print("best config: \n", bestie.genes)
-    # print("best fitness:", bestie.fitness)
-
-    rndm_srch = RandomSearch(xx, yy, n=20)
-    rndm_srch.run()
+    # Example Usage
+    xx, yy = unpick("boston.pkl")
+    ga_adj_obj = GA_adjusted(xx, yy, pop_size=10, max_generations=5)
+    ga_adj_obj.run()

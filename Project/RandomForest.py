@@ -12,7 +12,7 @@ import os
 
 
 def unpick(pick_file):
-    with open("processed_data/"+pick_file, "rb") as file:
+    with open("Project/processed_data/"+pick_file, "rb") as file:
         xs, ys = pickle.load(file)
     return xs, ys
 
@@ -50,10 +50,10 @@ def mse_reg(X_train, X_test, y_train, y_test):
     rf = RandomForestRegressor(criterion='mse', n_jobs=-1, n_estimators=100, random_state=RANDOM_STATE)
     rf = rf.fit(X_train, y_train)
     yhat = rf.predict(X_test)
-    return mean_squared_error(ry_test, yhat)
+    return mean_squared_error(y_test, yhat)
 
 
-def create_baseline(xs, ys):
+def run_rf(xs, ys):
     cy = encode_targets(ys)
     ry = transform_targets(ys)
 
@@ -72,7 +72,7 @@ def create_baseline(xs, ys):
 
 if __name__ == '__main__':
     filenames = []
-    for file in os.listdir('processed_data'):
+    for file in os.listdir('Project/processed_data'):
         filenames.append(file)
 
     for filename in filenames:
@@ -83,5 +83,5 @@ if __name__ == '__main__':
             d = shape[1:]
             xs = xs.reshape(shape[0], np.prod(d))
 
-        #create_baseline(xs, ys)
+        run_rf(xs, ys)
 

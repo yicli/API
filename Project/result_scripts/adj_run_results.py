@@ -15,8 +15,8 @@ for rem in ["mnist.pkl", "cifar10.pkl", "cifar100.pkl"]:
     f_list.remove(rem)
 
 for f in f_list:
-    perf = np.zeros((5, 3, 11), dtype=np.float)
-    runtime = np.zeros(5)
+    perf = np.zeros((20, 3, 11), dtype=np.float)
+    runtime = np.zeros(20)
     mse_wins = 0
     mse_wins_last_gen = 0
     print("processing", f)

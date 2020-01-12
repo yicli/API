@@ -290,12 +290,18 @@ class RandomSearch:
 
 if __name__ == "__main__":
     # example usage
+    print("Loading dataset: Boston Housing")
     xx, yy = unpick("boston.pkl")  # set /AML as working dir
 
     # run API (GA)
+    print("Running API for 10 generations, population: 5")
     small_ga = GA(xx, yy, pop_size=10, max_generations=5)
     small_ga.run()
 
     # run random search baseline
+    print("Runing random search with 20 configs")
     small_rndm_srch = RandomSearch(xx, yy, n=20)
-    small_rndm_srch.run()
+    best_fit, best_loss = small_rndm_srch.run()
+    print("Best fitness:", best_fit)
+    print("Loss Function:", best_loss)
+
