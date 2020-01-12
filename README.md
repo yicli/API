@@ -29,10 +29,10 @@ python Project/RandomForest.py | Runs the random forest model for all datasets.
 File Name | Description
 ----------|-------------
 API Paper           | Published paper for the API algorithm, this is kept in the root directory
-//Project            | Contains all python scripts
-/tab GA.py           | Our implementation of the API algorithm as described in the paper.
-/tab GA_adjusted.py  | API algorithm with modified genetic operations
-/tab RandomForest.py | Contains the random forest model.
-/tab preproc.py      | Preprocessing script that populated /processed_data. The original datasets are not include in this repository; please download these to /Project/datasets if you wish to repopulated /processed_data by running this script.
-/tab //result_scripts | Contains python scripts that were used to generate GA results over 20 runs; provided for reference, will take a long time to run. plot_results.py contains functions for extracting and plotting the results.
-/tab //*res           | Result folders containing pickled results.
+/Project            | Contains all python scripts
+    GA.py           | Our implementation of the API algorithm as described in the paper.
+    GA_adjusted.py  | API algorithm with modified genetic operations
+    RandomForest.py | Contains the random forest model.
+    preproc.py      | Preprocessing script that populated /processed_data. The original datasets are not include in this repository; please download these to /Project/datasets if you wish to repopulated /processed_data by running this script.
+    /result_scripts | Contains python scripts that were used to generate GA results over 20 runs; provided for reference, will take a long time to run. plot_results.py contains functions for extracting and plotting the results.
+    /*res           | Result folders containing pickled results.
