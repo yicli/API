@@ -30,7 +30,7 @@ File Name | Description
 ----------|-------------
 API Paper           | Published paper for the API algorithm, this is kept in the root directory
 /Project            | Contains all python scripts
-    GA.py           | Our implementation of the API algorithm as described in the paper.
+* GA.py           | Our implementation of the API algorithm as described in the paper.
     GA_adjusted.py  | API algorithm with modified genetic operations
     RandomForest.py | Contains the random forest model.
     preproc.py      | Preprocessing script that populated /processed_data. The original datasets are not include in this repository; please download these to /Project/datasets if you wish to repopulated /processed_data by running this script.
