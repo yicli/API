@@ -19,11 +19,14 @@ All scripts in this repository are intended to be ran from the root directory: /
 
 Most scripts will import from /API/Project; if import errors are encountered, try adding this manually to PYTHONPATH
 
-USAGE | Description
-------|------------
-python Project/GA.py | Runs the API algorithm for Boston Housing for 5 generations only, with a small population of 10; and random search with a pool of 20 chromosomes.
-python Project/GA_adjusted.py | Runs the adjusted algorithm for Boston Housing for 5 generations only, with a small population of 10.
-python Project/RandomForest.py | Runs the random forest model for all datasets.
+### USAGE
+<pre>
+python Project/GA.py            Runs the API algorithm for Boston Housing for 5 generations only, with a small
+                                population of 10; and random search with a pool of 20 chromosomes.
+python Project/GA_adjusted.py   Runs the adjusted algorithm for Boston Housing for 5 generations only, with a
+                                small population of 10.
+python Project/RandomForest.py  Runs the random forest model for all datasets.
+</pre>
 
 ## REPOSITORY CONTENTS
 <pre>
