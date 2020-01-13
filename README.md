@@ -13,6 +13,7 @@ Gideon Hanse, Yichao Li and Jaco Tetteroo
 * sklearn
 * pandas
 * matplotlib
+* pydot
 
 Note: for those with access to the LIACS DSLab, a virtual environment with these prerequisites is available:
 
