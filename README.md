@@ -22,7 +22,7 @@ source /data/s2372029/aml-venv/bin/activate
 ## INSTRUCTIONS
 All scripts in this repository are intended to be ran from the root directory: /API
 
-Most scripts will import from /API/Project; if import errors are encountered, try adding this manually to PYTHONPATH
+Most scripts will import from /API/Project; this should work out of the box, but if import errors are encountered, try adding this manually to PYTHONPATH
 
 ### USAGE
 <pre>
