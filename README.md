@@ -14,6 +14,10 @@ Gideon Hanse, Yichao Li and Jaco Tetteroo
 * pandas
 * matplotlib
 
+Note: for those with access to the LIACS DSLab, a virtual environment with these prerequisites is available:
+
+source /data/s2372029/aml-venv/bin/activate
+
 ## INSTRUCTIONS
 All scripts in this repository are intended to be ran from the root directory: /API
 
